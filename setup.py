@@ -15,7 +15,7 @@ setup(
     description='Django storage backends for go-fastdfs',
     long_description=readme,
     packages=['django_gofastdfs_storage'],
-    install_requires=['django>=2.2.10',
+    install_requires=['django>=2.1.10',
                       'requests>=2.23.0'],
     include_package_data=True,
     url='https://github.com/lsdlab/django-gofastdfs-storage',

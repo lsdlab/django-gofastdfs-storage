@@ -1,7 +1,6 @@
 from django.conf import settings
 from django.core.files.storage import Storage
 from django.utils.deconstruct import deconstructible
-from .gofastdfs_upload import save_gofastdfs_static
 import requests
 
 
