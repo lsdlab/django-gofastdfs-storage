@@ -53,11 +53,11 @@ class GoFastDFSStorage(Storage):
         return False
 
 
-class MediaStorage(OssStorage):
+class MediaStorage(GoFastDFSStorage):
     def __init__(self):
         super(MediaStorage, self).__init__()
 
 
-class StaticStorage(OssStorage):
+class StaticStorage(GoFastDFSStorage):
     def __init__(self):
         super(StaticStorage, self).__init__()
