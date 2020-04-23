@@ -49,3 +49,13 @@ class GoFastDFSStorage(Storage):
 
     def exists(self, name):
         return False
+
+
+class MediaStorage(OssStorage):
+    def __init__(self):
+        super(MediaStorage, self).__init__()
+
+
+class StaticStorage(OssStorage):
+    def __init__(self):
+        super(StaticStorage, self).__init__()

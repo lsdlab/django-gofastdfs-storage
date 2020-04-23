@@ -13,9 +13,12 @@
 pip install django-gofastdfs-storage==1.0.0
 ```
 
-## settings 中需要设置的环境变量
+## settings.py
 
 ```shell
+STATICFILES_STORAGE = 'django_gofastdfs_storage.backends.StaticStorage'
+DEFAULT_FILE_STORAGE = 'django_gofastdfs_storage.backends.MediaStorage'
+
 GOFASTDFS_ENDPOINT=''
 GOFASTDFS_AUTH_TOKEN=''
 GOFASTDFS_BUCKET_NAME='djangoadmin'
