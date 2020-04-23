@@ -6,12 +6,14 @@ with open('README.md', 'rb') as f:
 
 setup(
     name='django-gofastdfs-storage',
-    version="JC",
+    version="1.0.0",
+    author="JC",
     author_email="lsdvincent@gmail.com",
+    maintainer="JC",
+    maintainer_email="lsdvincent@gmail.com",
     license='MIT',
     description='Django storage backends for go-fastdfs',
     long_description=readme,
-    packages=find_packages(),
     packages=['django_gofastdfs_storage'],
     install_requires=['django>=2.2.10',
                       'requests>=2.23.0'],
