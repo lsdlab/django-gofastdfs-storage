@@ -21,7 +21,7 @@ def _get_config(name, default=None):
 @deconstructible
 class GoFastDFSStorage(Storage):
     def __init__(self, end_point=None, token=None, bucket_name=None):
-        self.end_point = _normalize_endpoint(end_point if end_point else _get_config('GOFASTDFS_ENDPOINT'))
+        self.end_point = end_point if end_point else _get_config('GOFASTDFS_ENDPOINT')
         self.auth_token = auth_token if auth_token else _get_config('GOFASTDFS_AUTH_TOKEN')
         self.bucket_name = bucket_name if bucket_name else _get_config('GOFASTDFS_BUCKET_NAME')
 
