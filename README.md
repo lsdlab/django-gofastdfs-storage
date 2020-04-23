@@ -11,6 +11,8 @@
 
 ```shell
 pip install django-gofastdfs-storage==1.0.0
+
+pip install git+https://github.com/lsdlab/django-gofastdfs-storage.git
 ```
 
 ## settings.py
