@@ -4,6 +4,17 @@
 ) 作为 Django 的静态文件存储后端
 
 
+已发布至 pypi: https://pypi.org/project/django-gofastdfs-storage/1.0.0/
+
+
+## pip 安装
+
+```shell
+pip install django-gofastdfs-storage==1.0.0
+```
+
+## settings 中需要设置的环境变量
+
 ```shell
 GOFASTDFS_ENDPOINT=''
 GOFASTDFS_AUTH_TOKEN=''
