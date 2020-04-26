@@ -1,4 +1,5 @@
 import os
+import base64
 import six
 from django.core.exceptions import ImproperlyConfigured
 from django.conf import settings
@@ -29,9 +30,9 @@ class GoFastDFSStorage(Storage):
         pass
 
     def save_gofastdfs_static(self, dir_name, file_path):
-        url = self.end_point + '/upload'
+        url = self.end_point + '/group1/upload'
         files = {'file': open(file_path, 'rb')}
-        options = {'auth_token': self.auth_token,
+        options = {'auth_token': base64.b64encode(self.auth_token.encode()).decode("utf-8"),
                 'output': 'json', 'path': dir_name, 'scene': 'default'}
         try:
             res = requests.post(url, data=options, files=files)
@@ -47,7 +48,7 @@ class GoFastDFSStorage(Storage):
         return url
 
     def url(self, name):
-        return self.end_point + '/' + self.bucket_name + "/" + name.split('/')[-1] + '?download=0'
+        return self.end_point + '/group1/' + self.bucket_name + "/" + name.split('/')[-1] + '?download=0'
 
     def exists(self, name):
         return False
