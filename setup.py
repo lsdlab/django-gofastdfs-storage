@@ -1,8 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-
-with open('README.md', 'rb') as f:
-    readme = f.read().decode('utf-8')
 
 setup(
     name='django-gofastdfs-storage',
@@ -13,7 +10,6 @@ setup(
     maintainer_email="lsdvincent@gmail.com",
     license='MIT',
     description='Django storage backends for go-fastdfs',
-    long_description=readme,
     packages=['django_gofastdfs_storage'],
     install_requires=['django>=2.1.10',
                       'requests>=2.23.0'],
