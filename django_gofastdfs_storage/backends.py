@@ -32,7 +32,7 @@ class GoFastDFSStorage(Storage):
     def save_gofastdfs_static(self, dir_name, file_path):
         url = self.end_point + '/group1/upload'
         files = {'file': open(file_path, 'rb')}
-        options = {'auth_token': base64.b64encode(self.auth_token.encode()).decode("utf-8"),
+        options = {'auth_token': self.auth_token,
                 'output': 'json', 'path': dir_name, 'scene': 'default'}
         try:
             res = requests.post(url, data=options, files=files)

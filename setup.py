@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='django-gofastdfs-storage',
-    version="1.0.1",
+    version="1.0.2",
     author="JC",
     author_email="lsdvincent@gmail.com",
     maintainer="JC",
@@ -12,7 +12,7 @@ setup(
     description='Django storage backends for go-fastdfs',
     packages=['django_gofastdfs_storage'],
     install_requires=['django>=2.1.10',
-                      'requests>=2.23.0'],
+                      'requests>=2.26.0'],
     include_package_data=True,
     url='https://github.com/lsdlab/django-gofastdfs-storage',
     classifiers=[
@@ -28,6 +28,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Framework :: Django',
     ],
 )
