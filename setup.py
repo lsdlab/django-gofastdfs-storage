@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='django-gofastdfs-storage',
-    version="1.0.3",
+    version="1.0.4",
     author="JC",
     author_email="lsdvincent@gmail.com",
     maintainer="JC",

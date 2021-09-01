@@ -45,8 +45,7 @@ class GoFastDFSStorage(Storage):
             raise SystemExit(e)
 
     def _save(self, name, content):
-        response = self.save_gofastdfs_static(
-            self.bucket_name, content.__str__())
+        response = self.save_gofastdfs_static(content.__str__())
         if response.status_code != 200:
             raise Exception("gofastdfs upload file failed")
         url = response.json()['path']
