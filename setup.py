@@ -1,5 +1,7 @@
 from setuptools import setup
 
+with open('README.md', 'r', 'utf-8') as f:
+    readme = f.read()
 
 setup(
     name='django-gofastdfs-storage',
@@ -10,6 +12,8 @@ setup(
     maintainer_email="lsdvincent@gmail.com",
     license='MIT',
     description='Django storage backends for go-fastdfs',
+    long_description=readme,
+    long_description_content_type='text/markdown',
     packages=['django_gofastdfs_storage'],
     install_requires=['django>=2.1.10',
                       'requests>=2.26.0'],
