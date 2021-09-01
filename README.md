@@ -4,13 +4,13 @@
 ) 作为 Django 的静态文件存储后端
 
 
-已发布至 pypi: https://pypi.org/project/django-gofastdfs-storage/1.0.1/
+已发布至 pypi: https://pypi.org/project/django-gofastdfs-storage/1.0.3/
 
 
 ## pip 安装
 
 ```shell
-pip install django-gofastdfs-storage==1.0.1
+pip install django-gofastdfs-storage==1.0.3
 ```
 
 ## settings.py
